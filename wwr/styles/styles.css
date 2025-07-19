@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap');
+
+:root {
+  --primary-color: #005F73;     /* Midnight Green */
+  --secondary-color: #94D2BD;   /* Tiffany Blue */
+  --accent-color: #EE9B00;      /* Gamboge */
+  --text-color: #333;
+  --bg-color: #f9f9f9;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  height: 60px;
+  width: auto;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--secondary-color);
+}
+
+.hero {
+  text-align: center;
+  background-color: white;
+  padding: 2rem;
+}
+
+.hero img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.hero article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.hero article img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.history {
+  padding: 2rem;
+  background-color: var(--secondary-color);
+  color: white;
+  text-align: center;
+}
+
+.history h2 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1rem;
+}
+
+.history p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+.gallery {
+  padding: 2rem;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+.gallery-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.gallery-images img {
+  width: 200px;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-images img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+footer {
+  background-color: var(--accent-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.socialmedia {
+  margin-top: 0.5rem;
+}
+
+.socialmedia img {
+  height: 24px;
+  width: 24px;
+  margin: 0 0.5rem;
+  vertical-align: middle;
+}
