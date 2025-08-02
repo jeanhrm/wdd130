@@ -104,7 +104,10 @@ nav a:hover {
   max-width: 800px;
   margin: 0 auto;
   font-size: 1.1rem;
+  text-align: justify;
+  line-height: 1.8;
 }
+
 
 .gallery {
   padding: 2rem;
@@ -126,10 +129,13 @@ nav a:hover {
 }
 
 .gallery-images img {
-  width: 200px;
+  width: 100%;
+  max-width: 200px;   /* límite máximo */
+  height: 150px;
+  object-fit: cover;
   border-radius: 6px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 .gallery-images img:hover {
   transform: scale(1.05);
@@ -159,7 +165,6 @@ footer p {
   height: 24px;
   width: 24px;
   transition: transform 0.2s ease;
-  filter: brightness(0) invert(1);
 }
 
 .socialmedia img:hover {
@@ -190,4 +195,66 @@ footer p {
     flex-direction: column;
     text-align: center;
   }
+}
+
+.hero-section {
+  background-image: url('images/rafting1.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: #005F73;
+  margin-bottom: 2rem;
+}
+
+.hero-content {
+  background-color: white;
+  padding: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.hero-text {
+  flex: 1 1 60%;
+  text-align: left;
+}
+
+.hero-image img {
+  width: 100px;
+  border-radius: 8px;
+}
+
+.history-content {
+  display: flex;
+  flex-wrap: nowrap; /* evita que se reordenen en pantallas grandes */
+  align-items: stretch;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.history-text {
+  flex: 1 1 33%;
+  text-align: justify;
+  line-height: 1.8;
+  max-width: 400px;
+}
+
+.history-img {
+  flex: 0 0 250px;
+  max-height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  align-self: stretch;
 }
