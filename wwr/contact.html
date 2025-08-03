@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Willka Rafting Adventures</title>
+  <title>Contact with Willka Rafting Adventures</title>
   <meta name="description" content="Contact Willka Rafting Adventures for bookings, questions, or suggestions. Reach us easily and plan your next adventure!">
-  <meta name="author" content="Jean C Ordoñez">
+  <meta name="author" content="Jean Ordoñez">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
@@ -23,7 +23,7 @@
   </header>
 
   <main>
-
+    <h1 class="contact-h1">CONTACT US</h1>
     <section class="company-info">
       <h2>Company Information</h2>
       <p><strong>Address:</strong> San Cristóbal, Huancavelica, Peru</p>
@@ -71,9 +71,9 @@
       <fieldset>
         <legend>Select your purpose</legend>
         <p>What is the purpose of your message?</p>
-        <label><input type="radio" name="purpose" value="general"> General Inquiry</label><br>
-        <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
-        <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+        <label><input type="radio" id="purpose-general"   name="purpose" value="general"> General Inquiry</label><br>
+        <label><input type="radio" id="purpose-reservation"   name="purpose" value="reservation"> Reservation Question</label><br>
+        <label><input type="radio" id="purpose-suggestion" name="purpose" value="suggestion"> Website Suggestion</label>
 
       </fieldset>
 
@@ -84,7 +84,7 @@
         <textarea id="message" name="message" rows="4" placeholder="Let us know how we can help you with your adventure..."></textarea>
 
         <label>
-          <input type="checkbox" name="subscribe" value="yes">
+          <input type="checkbox" id="subscribe" name="subscribe" value="yes">
           Please subscribe me to the monthly newsletter
         </label>
           <p>If you'd like to stay informed, you can subscribe to our monthly newsletter. 
